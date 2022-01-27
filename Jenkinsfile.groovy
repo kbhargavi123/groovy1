@@ -16,7 +16,7 @@ pipeline
         {
             steps {
                 def a=$Type
-               if (a=Google)
+               if (a="Google")
              {
                 def li=a as List
                 println li
