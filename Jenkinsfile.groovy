@@ -15,7 +15,7 @@ pipeline
         stage('groovy script') 
         {
             steps {
-                def a=$Type
+                def a = Type
                if (a == "Google")
                {
                   def li=a as List
