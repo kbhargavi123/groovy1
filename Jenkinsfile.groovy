@@ -15,6 +15,8 @@ pipeline
         stage('groovy script') 
         {
             steps {
+              script
+              {
                 def a=$Type
                if (a == "Google")
                {
@@ -22,7 +24,7 @@ pipeline
                   println li
                }
                else
-              {
+               {
                   def map = [:]
                   def b=a.length();
                   println b
@@ -31,10 +33,8 @@ pipeline
                   def lname= sp.last()
                   map[fname] = lname
                   println map
-              
-             
-             }
-             
+                }
+              }
             }
         }
    }
